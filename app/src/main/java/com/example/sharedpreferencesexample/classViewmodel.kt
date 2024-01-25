@@ -12,7 +12,7 @@ class classViewmodel @Inject constructor(): ViewModel() {
 
     private var _name = MutableStateFlow(String())
     var name = _name.asStateFlow()
-
+    var aa = String()
     fun setName(newName: String) {
         _name.value = newName
     }
