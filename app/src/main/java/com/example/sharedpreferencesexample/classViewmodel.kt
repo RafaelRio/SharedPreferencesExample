@@ -10,9 +10,8 @@ import javax.inject.Inject
 @HiltViewModel
 class classViewmodel @Inject constructor(): ViewModel() {
 
-    private var _name = MutableStateFlow(String())
-    var name = _name.asStateFlow()
-    var aa = String()
+    private val _name = MutableStateFlow("")
+    val name = _name.asStateFlow()
     fun setName(newName: String) {
         _name.value = newName
     }
